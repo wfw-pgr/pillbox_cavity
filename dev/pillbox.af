@@ -1,0 +1,20 @@
+### 2.856 GHz Cavity
+### pillbox-type cavity
+### created by K.Nishida
+###
+
+&reg kprob=1                           ! superfish problem 
+icylin=1                               ! cylindrical coordinates 
+conv=10.0                               ! unit conversion ( e.g. cm => mm ) 
+freq=2856.0                               ! frequency (MHz) 
+dx=0.002                                 ! mesh size 
+xdri=0.0,ydri=0.08032727756594264                ! drive point of RF 
+kmethod=1                              ! use beta to compute wave number 
+beta=0.999 &                             ! Particle velocity for transit-time integrals 
+
+
+$po x=0.0, y=0.0 $
+$po x=0.0, y=0.08032727756594264 $
+$po x=0.2, y=0.08032727756594264 $
+$po x=0.2, y=0.0 $
+$po x=0.0, y=0.0 $
