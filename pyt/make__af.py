@@ -65,7 +65,7 @@ def make__af():
     # --- [3] pillbox cavity geometry               --- #
     # ------------------------------------------------- #
     #  -- [3-1] preparation                         --  #
-    wavelength = const["cv"] / const["frequency"]
+    wavelength = const["cv"] / const["frequency"] * const["beta"]
 
     #  -- [3-2] Dp :: diameter of pillbox cavity    --  #
     if ( const["auto_cell_Diameter"] ):
